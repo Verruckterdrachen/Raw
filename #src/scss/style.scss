@@ -66,7 +66,7 @@ body {
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-@import "forms";
+//@import "forms";
 @import "ui";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
@@ -74,10 +74,10 @@ body {
 //@import "datepicker";
 //@import "lightgallery";
 //@import "pagging";
-@import "popup";
+//@import "popup";
 @import "header";
 @import "footer";
-@import "home";
+//@import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
@@ -91,11 +91,8 @@ body {
         }
       }
       .section__image {
-        flex: 0 0 70%;
-        padding: 0px 0px 49% 0px;
-        @media (max-width:$md2+px){
-          padding: 0px 0px 66% 0px;
-        }
+        flex: 0 0 937/1386 * 100%;
+        padding: 0px 0px 678/1386 * 100%;;
       }
       .section__body {
         padding: 30px 20px;
@@ -119,7 +116,6 @@ body {
     }
   }
   &__body {
-    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,8 +147,11 @@ body {
     margin: 0px 0px 40px 0px;
   }
   &__image {
-    flex: 0 0 60%;
-    padding: 0px 0px 46% 0px;
+    flex: 0 0 811/1386 * 100%;
+    padding: 0px 0px 634/1386 * 100% 0px;
+    &_w {
+      padding: 0px 0px 733/1386 * 100% 0px;
+    }
     position: relative;
     img{max-width: 100%;}
     &::after{
@@ -163,12 +162,6 @@ body {
       top: 0;
       left: 0;
       background-color: rgba(255, 255, 255, 0.3);
-    }
-    @media (max-width:$md2+px){
-      padding: 0px 0px 66% 0px;
-    }
-    &_w {
-      padding: 0px 0px 60% 0px;
     }
   }
 }
